@@ -678,3 +678,146 @@ footer {
   }
 
 }
+
+/* =========================
+   AUTHENTICATION
+========================= */
+
+.welcome-user {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(3, 25, 42, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-modal {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.auth-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.auth-close:hover {
+  color: #06263d;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-label {
+  color: #c18e25;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.auth-form h2 {
+  color: #102a43;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.auth-form label {
+  color: #102a43;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.auth-form input {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d9e0e7;
+  border-radius: 5px;
+  background: white;
+  color: #102a43;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #c18e25;
+  box-shadow: 0 0 0 3px rgba(193, 142, 37, 0.12);
+}
+
+.auth-submit {
+  width: 100%;
+  height: 46px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #06263d;
+  color: white;
+  font-weight: 700;
+}
+
+.auth-submit:hover {
+  background: #0b3b5a;
+}
+
+.auth-switch {
+  text-align: center;
+  color: #718096;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.auth-switch button {
+  border: none;
+  background: transparent;
+  color: #c18e25;
+  font-weight: 700;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .auth-modal {
+    padding: 35px 25px;
+  }
+
+  .welcome-user {
+    display: none;
+  }
+}
